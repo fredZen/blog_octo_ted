@@ -1,0 +1,37 @@
+res = new HashMap();
+
+twitter = new HashMap();
+auteursCsv = templateEnvironment.getData("auteurs");
+for (i = 0; i < auteursCsv.size(); i++) {
+	row = auteursCsv.get(i);
+	twitter{row.get("Auteur").getAsString().toLowerCase()} = row.get("Twitter").getAsString();
+}
+res{"twitter"} = twitter;
+
+sessions = new HashMap();
+categories = new ArrayList();
+sessionsCsv = templateEnvironment.getData("sessions");
+sessionHeaders = sessionsCsv.get("headers");
+for (i = 0; i < sessionsCsv.size(); i++) {
+	row = sessionsCsv.get(i);
+	session = new HashMap();
+	for(j = 0; j < sessionHeaders.size(); j++) {
+		header = sessionHeaders.get(j).getAsString();
+		session{header} = row.get(header).getAsString();
+	}
+	auteurs = new ArrayList();
+	for(auteur: row.get("Auteur").getAsString().split(",")) {
+		auteurs.add(auteur.trim());
+	}
+	session{"Auteurs"} = auteurs;
+	category = session{"Categorie"};
+	if(! sessions.containsKey(category)) {
+		sessions{category} = new ArrayList();
+		categories.add(category);
+	}
+	sessions{category}.add(session);
+}
+res{"sessions"} = sessions;
+res{"categories"} = categories;
+
+return res;

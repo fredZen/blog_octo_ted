@@ -1,0 +1,2 @@
+- Pouvoir afficher des twitters différents (selon la conférence) pour le même nom d'auteur
+- Automatiser l'accès à l'inliner de css

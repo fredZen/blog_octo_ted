@@ -1,0 +1,25 @@
+sourceRoot: src
+outputRoot: out
+
+modes: ignore(**/*.bsh)
+
+sourceEncoding: UTF-8
+
+logFile: log.fmpp
+
+data: {
+  auteurs: csv(data/auteurs.csv
+  {
+    separator: ";"
+    encoding: ISO-8859-15
+  })
+  sessions: csv(data/sessions.csv
+  {
+    separator: ";"
+    encoding: ISO-8859-15
+  })
+}
+
+localData: [
+  case(**/*.htm, **/*.html, bsh({ignoreMissing}))
+]
