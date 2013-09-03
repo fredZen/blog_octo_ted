@@ -1,8 +1,8 @@
 Categorie;Titre;Auteur;Evenement;Video;Supports;Podcast;Largeur
 Stratégie technologique;"7 changements nécessaires pour sau&shy;ver votre système d'information décisionnel";Joseph GLORIEUX;USI 2013;http://www.usievents.com/fr/conferences/12-paris-usi-2013/sessions/1117-7-changements-necessaires-pour-sauver-votre-systeme-d-information-decisionnel;;;3
 Stratégie technologique;Les patterns des géants du web;Ludovic CINQUIN;DevoxxFR 2013, USI 2013;http://www.usievents.com/fr/conferences/12-paris-usi-2013/sessions/1109-les-secrets-des-geants-du-web-7-pratiques-pour-mieux-travailler;;;3
-Stratégie technologique;L'entreprise à l'heure de la mobilité;Guillaume Plouin;L'atelier numérique n°476, 22 juin 2013;;;http://www.atelier.net/radio/2013/06/24/atelier-numerique-476_422072#player_wrapper;3
-Stratégie technologique;Le BYOD confronté au quotidien de la DSI;Guillaume Plouin;USI 2013;http://www.usievents.com/fr/conferences/12-paris-usi-2013/sessions/1111-le-byod-confronte-au-quotidien-de-la-dsi;https://speakerdeck.com/plouin/le-boyd-confronte-au-quotidien-de-la-dsi-usi2013;;3
+Stratégie technologique;L'entreprise à l'heure de la mobilité;Guillaume PLOUIN;L'atelier numérique n°476, 22 juin 2013;;;http://www.atelier.net/radio/2013/06/24/atelier-numerique-476_422072#player_wrapper;3
+Stratégie technologique;Le BYOD confronté au quotidien de la DSI;Guillaume PLOUIN;USI 2013;http://www.usievents.com/fr/conferences/12-paris-usi-2013/sessions/1111-le-byod-confronte-au-quotidien-de-la-dsi;https://speakerdeck.com/plouin/le-boyd-confronte-au-quotidien-de-la-dsi-usi2013;;3
 User eXperience;Les nouveaux challenges de l'UX Agile;Jérémie CHAINE;FLUPA UX day;;http://fr.slideshare.net/jchaine/prez-flupajc-hv10;;2
 User eXperience;Quand la banque devient ludique;Sophie MUTO;USI 2013;http://www.usievents.com/fr/conferences/12-paris-usi-2013/sessions/1110-quand-la-banque-devient-ludique;;;2
 User eXperience;Kinect en moins de 10 Minutes;Vincent GUIGUI;Microsoft TechDays 2013;;http://www.slideshare.net/Developpeurs/lan205-kinect-en-moins-de-10-minutes-slides;;2
@@ -24,9 +24,9 @@ BigData et NoSQL;"NoSQL&nbsp;: après l'enthousiasme, les défis à relever";Djamel
 BigData et NoSQL;"Indexer la terre entière&nbsp;: un projet fou ? Plus aujourd'hui !";Nicolas COLOMER;Meetup Elasticsearch France #2;;http://fr.slideshare.net/n_colomer/indexer-la-terre-entiere;;3
 BigData et NoSQL;Big Data - Opportunités pour les experts-comptables;Eric BIERNAT;Séminaire au sommet des experts-comptables et commissaires aux comptes (Courchevel);;;;3
 Software craftsmanship;Déployer en continu;Benoit LAFONTAINE;USI 2013;http://www.usievents.com/fr/conferences/12-paris-usi-2013/sessions/1116-deployer-en-continu;;;2
-Software craftsmanship;Clean Code Games;Michel DOMENJOUD, Mathieu GANDIN;Agile France;;http://fr.slideshare.net/mdomenjoud/clean-code-game-agile-france;;2
 Software craftsmanship;Du JavaScript propre ? Challenge accepted!;Julien JAKUBOWSKI;DevoxxFR 2013;http://parleys.com/play/517bf74ee4b0736a5fa66a38/chapter0/about;http://fr.slideshare.net/jak78/java-script-devoxxfrance2013ppt;;2
-Software craftsmanship;Indiana Jones et le temple du Legacy Code;Mathieu GANDIN;Agile France, Scrum Days;;;;3
+Software craftsmanship;Indiana Jones et le temple du Legacy Code;Mathieu GANDIN;Agile France, Scrum Days;;;;2
+Software craftsmanship;Clean Code Games;Michel DOMENJOUD, Mathieu GANDIN;Agile France;;http://fr.slideshare.net/mdomenjoud/clean-code-game-agile-france;;3
 Software craftsmanship;"Tester autrement&nbsp;: Le Guide du Testeur Intergalactique";Rémy-Christophe SCHERMESSER;Agile France;;http://fr.slideshare.net/El_Picador/the-hitchhickers-guide-to-unit-testing;;3
 Expertise technologique;"Spring Batch&nbsp;: par quel bout le prendre ?";Julien JAKUBOWSKI;ParisJUG;;http://fr.slideshare.net/jak78/20130514-parisjugspringbatch;;2
 Expertise technologique;La mort prochaine du GC ?;Philippe PRADOS;DevoxxFR 2013;;http://fr.slideshare.net/OCTOTechnology/2013-devoxx-la-mort-du-gc;;2
