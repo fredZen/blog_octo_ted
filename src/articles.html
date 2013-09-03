@@ -72,46 +72,54 @@
         bottom:1px;
         font-size:9pt;
       }
+      ul {
+        margin:0;
+        padding:0;
+        font-size:0;
+      }
     </style>
   </head>
   <body>
     <#list categories as category>
       <#assign w=0>
       <h2>${category}</h2>
-      <#list sessions[category] as row><#t>
-        <#assign rowWidth=row["Largeur"]?number>
-        <#assign w=w+rowWidth><#t>
-        <#if (w>6) ><#t>
-          <#assign w=rowWidth><#t>
-          <br/><#t>
-        </#if><#t>
-        <#assign has_vid=row["Video"]?has_content><#t>
-        <#assign has_slides=row["Supports"]?has_content><#t>
-        <#assign has_podcast=row["Podcast"]?has_content><#t>
-        <span class='box p${(row["Largeur"])}<#if has_vid> video</#if><#if has_slides> supports</#if><#if has_podcast> audio</#if>'><#t>
-          <#assign title=row["Titre"]?replace("'", "&rsquo;")><#t>
-          <#if has_vid><a href='${row["Video"]}' class='title'><#t>
-          <#elseif has_podcast><a href='${row["Podcast"]}' class='title'><#t>
-          <#elseif has_slides><a href='${row["Supports"]}' class='title'><#t>
-          </#if><#t>
-          <span class='title'>${title}</span><#t>
-          <#if has_vid || has_slides || has_podcast></a></#if><#t>
-          <span class='meta'><#list row["Auteurs"] as auteur><#t>
-              ${auteur?replace(" ", "&nbsp;")}<#t>
-              <#assign twit=twitter[auteur?lower_case]!><#t>
-              <#if twit?has_content >&nbsp;(<a href='https://twitter.com/${twit}'>@${twit}</a>)</#if><#t>
-              <#if auteur_has_next>, </#if><#t>
-            </#list><#t>
-            <br/><#t>
-            ${(row["Evenement"])}<#t>
-          </span><#t>
-          <#if has_vid && has_slides><span class='type'>vidéo<a href='${row["Supports"]}'> + supports</a></span><#t>
-          <#elseif has_vid><span class='type'>vidéo</span><#t>
-          <#elseif has_podcast><span class='type'>podcast</span><#t>
-          <#elseif has_slides><span class='type'>supports</span><#t>
+      <ul>
+        <#list sessions[category] as row>
+          <#assign rowWidth=row["Largeur"]?number>
+          <#assign w=w+rowWidth>
+          <#if (w>6) >
+            <#assign w=rowWidth>
+            <br/>
           </#if>
-        </span><#t>
-      </#list><#t>
-    </#list>
+          <#assign has_vid=row["Video"]?has_content>
+          <#assign has_slides=row["Supports"]?has_content>
+          <#assign has_podcast=row["Podcast"]?has_content>
+          <li class='box p${(row["Largeur"])}<#if has_vid> video</#if><#if has_slides> supports</#if><#if has_podcast> audio</#if>'>
+            <#assign title=row["Titre"]?replace("'", "&rsquo;")>
+            <#if has_vid><a href='${row["Video"]}' class='title'>
+            <#elseif has_podcast><a href='${row["Podcast"]}' class='title'>
+            <#elseif has_slides><a href='${row["Supports"]}' class='title'>
+            </#if>
+            <span class='title'>${title}</span>
+            <#if has_vid || has_slides || has_podcast></a></#if>
+            <span class='meta'><#t>
+              <#list row["Auteurs"] as auteur><#t>
+                ${auteur?replace(" ", "&nbsp;")}<#t>
+                <#assign twit=twitter[auteur?lower_case]!><#t>
+                <#if twit?has_content >&nbsp;(<a href='https://twitter.com/${twit}'>@${twit}</a>)</#if><#t>
+                <#if auteur_has_next>, </#if><#t>
+              </#list><#t>
+              <br/><#t>
+              ${(row["Evenement"])}
+            </span>
+            <#if has_vid && has_slides><span class='type'>vidéo<a href='${row["Supports"]}'> + supports</a></span>
+            <#elseif has_vid><span class='type'>vidéo</span>
+            <#elseif has_podcast><span class='type'>podcast</span>
+            <#elseif has_slides><span class='type'>supports</span>
+            </#if>
+          </li>
+        </#list>
+      </ul>
+    </#list><#t>
   </body>
 </html>
